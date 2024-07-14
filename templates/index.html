@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencher Planilha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Preencher Planilha Excel</h1>
+    <form action="/preencher" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        
+        <label for="demanda">Demanda:</label>
+        <input type="text" id="demanda" name="demanda"><br><br>
+        
+        <label for="modelo">Modelo do Inversor:</label>
+        <input type="text" id="modelo" name="modelo"><br><br>
+        
+        <label for="inversor">Potência do Inversor:</label>
+        <input type="text" id="inversor" name="inversor"><br><br>
+        
+        <label for="inversores">Quantidade de Inversores:</label>
+        <input type="text" id="inversores" name="inversores"><br><br>
+        
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" name="placa"><br><br>
+        
+        <label for="potenciap">Potência da Placa:</label>
+        <input type="text" id="potenciap" name="potenciap"><br><br>
+        
+        <label for="quantidade">Quantidade de Placas:</label>
+        <input type="text" id="quantidade" name="quantidade"><br><br>
+        
+        <label for="proposta">Proposta:</label>
+        <input type="text" id="proposta" name="proposta"><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
